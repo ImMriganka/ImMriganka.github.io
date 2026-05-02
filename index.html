@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mriganka Bairagi — AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo"><span class="accent">&gt;_</span> mb</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#certifications" class="mobile-link">Certifications</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-greeting"><span class="accent">$</span> whoami</p>
+      <h1 class="hero-name">Mriganka<br /><span class="accent">Bairagi</span></h1>
+      <div class="hero-typewriter">
+        <span id="typewriter"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-sub">Building intelligent systems that turn raw data into real decisions.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="https://github.com/ImMriganka" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+      </div>
+      <div class="hero-scroll">
+        <span>scroll down</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </div>
+    <div class="hero-terminal">
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">mriganka@ai-lab ~ </span>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <p><span class="t-prompt">$</span> python predict.py --model catboost</p>
+        <p class="t-out">Loading model... ✓</p>
+        <p class="t-out">MAE: 0.457 Cr &nbsp;|&nbsp; R²: 0.867 &nbsp;|&nbsp; MAPE: 18.4%</p>
+        <p class="t-blank"></p>
+        <p><span class="t-prompt">$</span> pytest backend/tests/ -v</p>
+        <p class="t-out">69 passed in 2.1s ✓</p>
+        <p class="t-blank"></p>
+        <p><span class="t-prompt">$</span> docker compose up --build</p>
+        <p class="t-out">✓ backend  ✓ frontend  ✓ prometheus  ✓ grafana</p>
+        <p class="t-blank"></p>
+        <p class="t-blink"><span class="t-prompt">$</span> <span class="t-cursor">█</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a <strong>Data Scientist & ML Engineer</strong> who loves building end-to-end AI systems —
+            from cleaning messy datasets and designing feature pipelines, to shipping models behind
+            production-grade APIs and dashboards.
+          </p>
+          <p>
+            My recent work spans <strong>real estate price prediction</strong> (CatBoost, Optuna, 0.867 R²),
+            <strong>LLM evaluation platforms</strong> (RAGAS, LangGraph, FastAPI), and
+            <strong>NLP sentiment analysis</strong> (RoBERTa fine-tuning). I care equally about the model quality
+            <em>and</em> the infrastructure that runs it.
+          </p>
+          <p>
+            When I'm not training models, I'm adding Prometheus metrics, writing GitHub Actions pipelines,
+            or reading papers on evaluation frameworks for AI agents.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">End-to-End ML Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">0.867</span>
+            <span class="stat-label">Best Model R²</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">69</span>
+            <span class="stat-label">Automated Tests</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Observability Metrics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">02.</span> Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card featured">
+          <div class="project-top">
+            <span class="project-icon">🏙️</span>
+            <div class="project-links">
+              <a href="https://github.com/ImMriganka/Housing_price_estimator" target="_blank" rel="noopener" title="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://huggingface.co/spaces/IMriganka/nestimate" target="_blank" rel="noopener" title="Live Demo">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Housing Price Estimator</h3>
+          <p>Full-stack ML system predicting Gurgaon residential prices. CatBoost + Optuna, Streamlit UI with 4 modules — predictor, analytics, recommender, and statistical insights. Docker + CI/CD on GitHub Actions.</p>
+          <div class="project-meta">
+            <span class="metric">R² 0.867</span>
+            <span class="metric">MAE 0.457 Cr</span>
+            <span class="metric">3,554 listings</span>
+          </div>
+          <div class="project-tags">
+            <span>CatBoost</span><span>Optuna</span><span>Streamlit</span><span>Docker</span><span>GitHub Actions</span><span>Plotly</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card featured">
+          <div class="project-top">
+            <span class="project-icon">🔬</span>
+            <div class="project-links">
+              <a href="https://github.com/ImMriganka/EvalForge" target="_blank" rel="noopener" title="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>EvalForge</h3>
+          <p>LLM agent benchmarking platform. Evaluates RAG agents with 6 RAGAS metrics + 13-prompt injection test suite. Composite trustworthiness score, LangGraph agents, FastAPI REST API, Next.js dashboard, Prometheus + Grafana observability.</p>
+          <div class="project-meta">
+            <span class="metric">69 tests</span>
+            <span class="metric">6 RAGAS metrics</span>
+            <span class="metric">13 injection probes</span>
+          </div>
+          <div class="project-tags">
+            <span>LangGraph</span><span>RAGAS</span><span>FastAPI</span><span>Next.js</span><span>Prometheus</span><span>Grafana</span><span>Docker</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">💬</span>
+            <div class="project-links">
+              <a href="https://github.com/ImMriganka" target="_blank" rel="noopener" title="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>YT Comment Sentiment Analyzer</h3>
+          <p>Fine-tuned RoBERTa (3-class) on 1M+ YouTube comments. Chrome extension that fetches live comments from any YouTube video and classifies sentiment in real-time. FastAPI backend with chart generation endpoints.</p>
+          <div class="project-meta">
+            <span class="metric">RoBERTa</span>
+            <span class="metric">1M+ training samples</span>
+            <span class="metric">Chrome Extension</span>
+          </div>
+          <div class="project-tags">
+            <span>Transformers</span><span>RoBERTa</span><span>FastAPI</span><span>Chrome Extension</span><span>HuggingFace</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">🖼️</span>
+            <div class="project-links">
+              <a href="https://github.com/ImMriganka/Image-Caption-Generator" target="_blank" rel="noopener" title="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>Image Caption Generator</h3>
+          <p>Deep learning model combining CNN visual feature extraction with LSTM language generation to produce natural language descriptions of images. Trained on MS-COCO with BLEU score evaluation.</p>
+          <div class="project-tags">
+            <span>CNN</span><span>LSTM</span><span>TensorFlow</span><span>BLEU Score</span><span>Computer Vision</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">03.</span> Tech Stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4><span class="accent">//</span> Machine Learning</h4>
+          <ul>
+            <li><span class="skill-dot"></span>scikit-learn</li>
+            <li><span class="skill-dot"></span>CatBoost</li>
+            <li><span class="skill-dot"></span>XGBoost / LightGBM</li>
+            <li><span class="skill-dot"></span>Optuna (Bayesian tuning)</li>
+            <li><span class="skill-dot"></span>Feature engineering</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4><span class="accent">//</span> Deep Learning / NLP</h4>
+          <ul>
+            <li><span class="skill-dot"></span>PyTorch</li>
+            <li><span class="skill-dot"></span>HuggingFace Transformers</li>
+            <li><span class="skill-dot"></span>BERT / RoBERTa / DistilBERT</li>
+            <li><span class="skill-dot"></span>LangChain / LangGraph</li>
+            <li><span class="skill-dot"></span>RAGAS evaluation</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4><span class="accent">//</span> Backend &amp; APIs</h4>
+          <ul>
+            <li><span class="skill-dot"></span>FastAPI</li>
+            <li><span class="skill-dot"></span>Streamlit</li>
+            <li><span class="skill-dot"></span>SQLAlchemy + SQLite/Postgres</li>
+            <li><span class="skill-dot"></span>Pydantic</li>
+            <li><span class="skill-dot"></span>REST APIs</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4><span class="accent">//</span> DevOps &amp; Infrastructure</h4>
+          <ul>
+            <li><span class="skill-dot"></span>Docker + Docker Compose</li>
+            <li><span class="skill-dot"></span>GitHub Actions (CI/CD)</li>
+            <li><span class="skill-dot"></span>Prometheus + Grafana</li>
+            <li><span class="skill-dot"></span>Railway + Vercel + HF Spaces</li>
+            <li><span class="skill-dot"></span>Linux / Bash</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4><span class="accent">//</span> Data &amp; Visualization</h4>
+          <ul>
+            <li><span class="skill-dot"></span>Pandas / NumPy</li>
+            <li><span class="skill-dot"></span>Plotly / Matplotlib / Seaborn</li>
+            <li><span class="skill-dot"></span>Statsmodels (OLS/Ridge)</li>
+            <li><span class="skill-dot"></span>Jupyter / Google Colab</li>
+            <li><span class="skill-dot"></span>EDA &amp; Feature selection</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4><span class="accent">//</span> Languages &amp; Tools</h4>
+          <ul>
+            <li><span class="skill-dot"></span>Python</li>
+            <li><span class="skill-dot"></span>JavaScript / TypeScript</li>
+            <li><span class="skill-dot"></span>SQL</li>
+            <li><span class="skill-dot"></span>Git / GitHub</li>
+            <li><span class="skill-dot"></span>Next.js / React</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">04.</span> Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>ML Engineer — Personal Projects</h3>
+              <span class="timeline-date">2024 — Present</span>
+            </div>
+            <p>Built production-grade ML systems: housing price estimator (CatBoost, 0.867 R²), LLM evaluation platform (RAGAS + LangGraph), and NLP sentiment pipeline (RoBERTa). Applied full DevOps stack — Docker, CI/CD, Prometheus/Grafana observability.</p>
+            <div class="timeline-tags">
+              <span>CatBoost</span><span>LangGraph</span><span>FastAPI</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Data Science Studies</h3>
+              <span class="timeline-date">2023 — 2024</span>
+            </div>
+            <p>Completed intensive training in machine learning, deep learning, NLP, and computer vision. Built supervised/unsupervised models, explored feature engineering pipelines, and worked through end-to-end project lifecycles from data preprocessing to model deployment.</p>
+            <div class="timeline-tags">
+              <span>scikit-learn</span><span>TensorFlow</span><span>NLP</span><span>EDA</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">05.</span> Certifications</h2>
+      <div class="certs-grid">
+
+        <div class="cert-card">
+          <div class="cert-icon">🎓</div>
+          <div class="cert-body">
+            <h4>Machine Learning Specialization</h4>
+            <p class="cert-issuer">Coursera — Andrew Ng</p>
+            <p class="cert-desc">Supervised learning, unsupervised learning, and best practices for building ML systems.</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">🤗</div>
+          <div class="cert-body">
+            <h4>NLP with HuggingFace Transformers</h4>
+            <p class="cert-issuer">HuggingFace / Coursera</p>
+            <p class="cert-desc">Fine-tuning BERT-family models, tokenization, sequence classification, and RAG pipelines.</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">📊</div>
+          <div class="cert-body">
+            <h4>Data Science Bootcamp</h4>
+            <p class="cert-issuer">CampusX</p>
+            <p class="cert-desc">End-to-end data science: EDA, feature engineering, model selection, deployment.</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">🐍</div>
+          <div class="cert-body">
+            <h4>Python for Data Science &amp; ML</h4>
+            <p class="cert-issuer">Udemy</p>
+            <p class="cert-desc">Python, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, and ML fundamentals.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">06.</span> Get In Touch</h2>
+      <div class="contact-inner">
+        <div class="contact-text">
+          <p>I'm currently open to <strong>Data Scientist</strong> and <strong>ML Engineer</strong> roles. Whether you have a role, a project idea, or just want to talk AI — my inbox is open.</p>
+          <a href="mailto:mriganka2001iem@gmail.com" class="btn btn-primary">Say Hello</a>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/ImMriganka" target="_blank" rel="noopener" class="social-link">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://huggingface.co/IMriganka" target="_blank" rel="noopener" class="social-link">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><circle cx="12" cy="12" r="10"/><text x="12" y="16" text-anchor="middle" font-size="12" fill="#0d1117">🤗</text></svg>
+            HuggingFace
+          </a>
+          <a href="mailto:mriganka2001iem@gmail.com" class="social-link">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Built with HTML · CSS · JS &nbsp;|&nbsp; <a href="https://github.com/ImMriganka" target="_blank" rel="noopener">ImMriganka</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
