@@ -1,9 +1,9 @@
 
 const phrases = [
-  'Data Scientist',
-  'ML Engineer',
+  'Data Science Practitioner',
+  'ML Practitioner',
   'LLM Evaluation Specialist',
-  'Backend Engineer',
+  'Backend Practitioner',
   'DevOps Practitioner',
 ];
 
