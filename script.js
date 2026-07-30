@@ -1,8 +1,4 @@
-/* ============================================================
-   PORTFOLIO JS — Mriganka Bairagi
-   ============================================================ */
 
-// ── Typewriter ──────────────────────────────────────────────
 const phrases = [
   'Data Scientist',
   'ML Engineer',
@@ -39,7 +35,7 @@ function typeWriter() {
 }
 setTimeout(typeWriter, 1200);
 
-// ── Navbar scroll shrink / active link ──────────────────────
+
 const navbar = document.getElementById('navbar');
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
@@ -63,7 +59,7 @@ function onScroll() {
 }
 window.addEventListener('scroll', onScroll, { passive: true });
 
-// ── Hamburger / Mobile menu ──────────────────────────────────
+
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -79,7 +75,7 @@ mobileLinks.forEach(link => {
   });
 });
 
-// ── Intersection Observer — reveal on scroll ─────────────────
+
 const revealEls = document.querySelectorAll(
   '.project-card, .stat-card, .skill-group, .timeline-item, .cert-card'
 );
@@ -98,14 +94,14 @@ const observer = new IntersectionObserver(
 );
 revealEls.forEach(el => observer.observe(el));
 
-// ── Staggered reveal for grids ────────────────────────────────
+
 document.querySelectorAll('.projects-grid, .skills-grid, .certs-grid, .about-stats').forEach(grid => {
   Array.from(grid.children).forEach((child, i) => {
     child.style.transitionDelay = `${i * 80}ms`;
   });
 });
 
-// ── Particle dots background (hero) ──────────────────────────
+
 (function createParticles() {
   const canvas = document.createElement('canvas');
   canvas.style.cssText = 'position:fixed;top:0;left:0;pointer-events:none;z-index:0;opacity:0.35';
